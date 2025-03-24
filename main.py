@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 async def load_cogs():
     """Load all cogs in the 'cogs' directory."""
-    for dirpath, _, filenames in os.walk('./cogs'):
+    for dirpath, _, filenames in os.walk('./modules'):
         for filename in filenames:
             if not filename.endswith('.py'):
                 continue
